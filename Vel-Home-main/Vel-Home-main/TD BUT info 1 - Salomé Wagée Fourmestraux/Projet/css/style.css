@@ -8,6 +8,11 @@ section {
     animation: fadeInUp 1s ease-out forwards;
 }
 
+.dm-serif {
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
+    line-height: 1.1;
+}
 
 section:nth-of-type(1) { animation-delay: 0.2s; } 
 section:nth-of-type(2) { animation-delay: 0.6s; } 
@@ -21,8 +26,8 @@ section:nth-of-type(3) { animation-delay: 1s; }
 } 
 
 body {
+    font-family: "Montserrat", Arial, sans-serif;
     margin: 0;
-    font-family: Arial, sans-serif;
     background-color: #b1d8b7;
     color: #09291a;
 }
@@ -295,12 +300,56 @@ footer {
     color: #ffffff;
 }
 
-.images_reseau{
-    height: 35px;
-    width: 40px;
+hr{
+    color: white;
+}
+
+footer .container{
     display: flex;
-    gap: 10px;
-    margin-left: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer .container p:nth-child(1){
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+footer .container p img{
+    margin-right: 1vh;
+}
+
+footer .container p:nth-child(2){
+    padding: 0.8vh;
+    font-size: 1.3em;
+    border: white solid 0.8px;
+    border-radius: 22px;
+}
+
+footer .container p:nth-child(2):hover{
+    padding: 0.8vh;
+    font-size: 1.3em;
+    border: white solid 0.8px;
+    border-radius: 22px;
+    background-color: #1a3b29;
+}
+
+footer .container-info{
+    display: flex;
+    text-align: start;
+    justify-content: space-between;
+}
+
+footer .container-group{
+    display: flex;
+    font-size: 1.2em;
+    gap: 25vh;
+}
+
+footer .container-droit{
+    margin-top: 5vh;
+    display: flex;
+    justify-content: center;
 }
 
 /*=================*/
