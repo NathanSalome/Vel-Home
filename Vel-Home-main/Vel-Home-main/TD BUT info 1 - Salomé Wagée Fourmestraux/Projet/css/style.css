@@ -2,7 +2,7 @@
 /*   Animations    */
 /*=================*/
 
-section {
+.presentation, .nos-valeurs, .actualite, .content-video p{
     opacity: 0;
     transform: translateY(50px);
     animation: fadeInUp 1s ease-out forwards;
@@ -13,6 +13,7 @@ section {
     font-weight: 400;
     line-height: 1.1;
 }
+
 
 section:nth-of-type(1) { animation-delay: 0.2s; } 
 section:nth-of-type(2) { animation-delay: 0.6s; } 
@@ -47,12 +48,13 @@ header {
     align-items: center;
     padding: 20px 40px;
     font-size: 1.2em;
-    background: rgba(255, 255, 255, 0.815);
+    background: rgba(255, 255, 255, 0.85);
     transition: all 0.60s ease;
 }
 
 header:hover{
     background: rgb(255, 255, 255);
+
 }
 
 .logo {
@@ -112,14 +114,17 @@ a{
 /*=================*/
 
 .container-video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
     width: 100%;
-    height: 68vh; 
+    height: 53vh; 
     overflow: hidden;
 }
 .video {
     position: absolute;
-    top: 50%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
     min-width: 100%;
@@ -130,12 +135,12 @@ a{
 }
 
 .content-video{
+    display: flex;
     color: white;
     position: relative;
     z-index: 1;
     font-size: 3em;
     padding: 3rem;
-    text-shadow: 0 2px 6px rgba(0,0,0,0.6);
     font-family: "DM Serif Display", serif;
     font-weight: 400;
     line-height: 1.1;
@@ -143,6 +148,7 @@ a{
 
 .content-video p{
     text-align: center;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.45);
 }
 /*=================*/
 /*   Présentation  */
@@ -241,7 +247,7 @@ h3{
 }
 
 .container-valeur img{
-    box-shadow: 10px 10px 5px #385b4f;
+    box-shadow: 5px 5px 8px #385b4f;
 } 
 
 .container-fleur, .container-velo, .container-main, .container-arbre{
@@ -392,6 +398,8 @@ footer .container-droit{
 /*=================*/
 /* Responsive      */
 /*=================*/
+
+
 
 @media (max-width: 1940px){
     .container-actu{
@@ -611,6 +619,18 @@ footer .container-droit{
     }
 }
 @media (max-width: 900px){
+    .container-video{
+        display: none;
+    }
+    footer .container-group{
+        gap: 8px;
+        font-size: 1em;
+    }
+
+    footer .container-reseau{
+        display: none;
+    }
+
     .actualite {
         grid-template-columns: 1fr;
         margin: 40px;
@@ -662,4 +682,15 @@ footer .container-droit{
         grid-template-columns: 1fr;
         margin: 40px;
     }
+}
+
+@media (max-width: 768px) { 
+    .presentation, .nos-valeurs, .actualite {
+        margin-bottom: 50px;
+    }
+}
+
+.presentation, .nos-valeurs, .actualite{
+    padding-top: 70px;
+    padding-bottom: 70px;
 }
