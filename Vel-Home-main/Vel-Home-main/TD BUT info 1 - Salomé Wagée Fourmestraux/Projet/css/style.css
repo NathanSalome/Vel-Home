@@ -353,9 +353,10 @@ footer .container{
     justify-content: space-between;
 }
 
-footer .container p:nth-child(1){
+footer .container a{
     font-weight: bold;
     font-size: 1.5em;
+    color: white;
 }
 
 footer .container p img{
@@ -365,16 +366,17 @@ footer .container p img{
 footer .container p:nth-child(2){
     padding: 0.8vh;
     font-size: 1.3em;
-    border: white solid 0.8px;
+    border: white solid 1.5px;
     border-radius: 22px;
 }
 
 footer .container p:nth-child(2):hover{
     padding: 0.8vh;
     font-size: 1.3em;
-    border: white solid 0.8px;
+    border: white solid 1.5px;
     border-radius: 22px;
-    background-color: #1a3b29;
+    background-color: #163122;
+    cursor: pointer;
 }
 
 footer .container-info{
@@ -393,6 +395,36 @@ footer .container-droit{
     margin-top: 5vh;
     display: flex;
     justify-content: center;
+}
+
+footer .container-reseau{
+    display: flex;
+    gap: 3px;
+    justify-content: center;
+    align-items: start;
+}
+
+footer .container-info p{
+    cursor: pointer;
+}
+
+footer .reseau{
+    display: flex;
+    justify-content: center;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 1px solid white;
+}
+
+
+footer .reseau:hover{
+    border: 2px white;
+    background-color: #163122;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 1px solid white;
 }
 
 /*=================*/
